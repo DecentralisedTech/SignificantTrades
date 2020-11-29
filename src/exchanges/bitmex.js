@@ -7,8 +7,8 @@ class Bitmex extends Exchange {
     this.id = 'bitmex'
 
     this.endpoints = {
-      PRODUCTS: 'https://www.bitmex.com/api/v1/instrument/active',
-      TRADES: () => `https://www.bitmex.com/api/v1/trade?symbol=${this.pair}&reverse=true&count=500`
+      PRODUCTS: '/api/bitmex/v1/instrument/active',
+      TRADES: () => `/api/bitmex/v1/trade?symbol=${this.pair}&reverse=true&count=500`
     }
 
     this.options = Object.assign(

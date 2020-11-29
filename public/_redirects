@@ -1,2 +1,3 @@
+/api/bitmex/* https://www.bitmex.com/api/:splat 200
 /api/*  https://api.aggr.trade/:splat  200
 /*   /index.html   200
